@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React from 'react';
 import SingleItem from './SingleItem';
 
-const ItemList = () => {
+const ItemList = (props) => {
+    console.log(props.title)
   return (
     <div className="item-list">
 
