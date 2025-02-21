@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 
 const App2 = () => {
@@ -46,3 +47,26 @@ export default App2;
 // Nomes compostos são separados por -
 
 // Tag vazia em React se chama Fragment ou Fragmento
+
+{/*{items === 5 ? (
+            <>
+                <SingleItem />
+                <SingleItem />
+                <SingleItem />
+                <SingleItem />
+                <SingleItem />
+            </>
+           ): (
+            <>
+                <SingleItem />
+                <SingleItem />
+                <SingleItem />
+                <SingleItem />
+                <SingleItem />
+                <SingleItem />
+                <SingleItem />
+                <SingleItem />
+                <SingleItem />
+                <SingleItem />
+            </>
+           )}*/}

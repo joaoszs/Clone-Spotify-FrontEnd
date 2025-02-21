@@ -16,7 +16,7 @@ function SingleItem() {
                       </div>
         
                       <FontAwesomeIcon
-                        className="single-item__icon "
+                        className="single-item__icon"
                         icon={faCirclePlay}
                       />
                     </div>

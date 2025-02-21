@@ -8,10 +8,10 @@ const Main = () => {
     <div className="main">
 
       {/* Item List de Artistas */}
-      <ItemList title = "Artistas" items= {5} />
+      <ItemList title = "Artistas" items= {10} />
 
       {/* Item List de musicas */}
-      <ItemList title = "Musicas" items= {10} />
+      <ItemList title = "Musicas" items= {20} />
     </div>
   );
 };

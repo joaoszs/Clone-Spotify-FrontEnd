@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from 'react';
@@ -16,28 +17,11 @@ const ItemList = ({title, items}) => {
         </div>
     
         <div className="item-list__container">
-           {items === 5 ? (
-            <>
-                <SingleItem />
-                <SingleItem />
-                <SingleItem />
-                <SingleItem />
-                <SingleItem />
-            </>
-           ): (
-            <>
-                <SingleItem />
-                <SingleItem />
-                <SingleItem />
-                <SingleItem />
-                <SingleItem />
-                <SingleItem />
-                <SingleItem />
-                <SingleItem />
-                <SingleItem />
-                <SingleItem />
-            </>
-           )}
+           {Array(items)
+           .fill()
+           .map((currentValue, index) => ( 
+           <SingleItem key={`${title}-${index}`} />
+           ))}
         </div>
     </div>
   )
