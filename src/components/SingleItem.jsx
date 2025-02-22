@@ -1,17 +1,19 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
+
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
 
-function SingleItem() {
+const SingleItem = ({id, name, image, banner}) => {
   return (
     <div className="single-item">
                     <div className="single-item__div-image-button">
                       <div className="single-item__div-image">
                         <img
                           className="single-item__image"
-                          src="https://i.scdn.co/image/ab676161000051744dcd8a3bff84cd7703892cf4"
-                          alt="Imagem do Artista X"
+                          src={image}
+                          alt={`Imagem do Artista ${name}`}
                         />
                       </div>
         
@@ -24,7 +26,7 @@ function SingleItem() {
                     <div className="single-item__texts">
                       <div className="single-item__2lines">
                         <p className="single-item__title">
-                          Amo Noite E Dia - Live In Sao Paulo / 2010
+                          {name}
                         </p>
                       </div>
         
